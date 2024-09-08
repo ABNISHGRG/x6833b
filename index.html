@@ -50,12 +50,31 @@
     
     <h1>Rooting of the Device</h1>
     <ul>
-        <li><h2>Copy the boot.img</h2>1. Copy the Boot.img from your stock firmware the firmware version should be the same as your build number otherwise you will end up on bootloop</li>
+        <li><h2>Unlocked Bootloader</h2>Make sure your bootloader is unlocked before continuing</li>
+
+        <li><h2>Copy the boot.img</h2>Copy the Boot.img from your stock firmware the firmware version should be the same as your build number otherwise you will end up on bootloop</li>
+
         <li><h2>Install Magisk app</h2>Download and install Magisk on your phone from <a href="https://magiskmanager.com/" target="_blank">magisk</a> or <a href="https://github.com/Robotition/MagiskDelta" target="_blank">magisk delta</a> </li>
+
         <li><h2>Patch the boot.img</h2>Go to Magisk and click install choose "Select and Patch a File" in method and select the boot.img the file should be renamed magisk_patched_[Random Strings].img at the download folder of your device.</li>
+
         <li><h2>Move the patched boot image to pc</h2>Copy the  magisk_patched_[Random Strings].img to the platform-tools folder in your computer and rename it to "boot.img" you can copy the vbmeta.img from your firmware if you want to disable vbmeta</li>
-        <li><h2></h2></li>
-        <li></li>
+
+        <li><h2>Add patched img to platform-tools</h2>On your computer open the platform-tool folder and right click on an empty space then open in terminal</li>
+
+        <li><h2>Check adb drivers</h2>Check if adb is working and device is shown to the pc 
+        <article>adb devices</article></li>
+
+        <li><h2>Reboot your phone in fastboot mode</h2><article>adb reboot bootloader</article></li>
+
+        <li><h2>Check fastboot drivers</h2><article>fastboot devices</article></li>
+
+        <li><h2>Flash patched_boot.img</h2>If you flashed wrong boot.img to boot partition you will get bricked<article>fastboot flash boot patched_boot.img</article></li>
+
+        <li><h2>Reboot to system</h2><article>fastboot reboot</article></li>
+
+        <li><h2>Open magisk app</h2>Simply it will say to restart device for the root toi be complete and you are all SET!!</li>
+        
     </ul>
 
 
