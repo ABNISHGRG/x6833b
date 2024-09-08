@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABNISH X6833B</title>
+    <title>CUSTOM X6833B</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
@@ -13,7 +13,6 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contatct</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +28,38 @@
         </article>
         <h3>DEVICE: Infinix Note 30 (X6833B)</h3>
         
-        <h3 style="text-align: center;"><em>Important:</em> check your current firmware version from build number in settings, then download the respective firmware, then extract the <strong>vbmeta.img</strong> from it (also <strong>boot.img</strong> if you need root)</li>
+        <h3 style="text-align: center;"><em>Important:</em> check your current firmware version from build number in settings, then download the respective firmware, then extract the <strong>vbmeta.img</strong> from it (also <strong>boot.img</strong> if you need <a href="https://github.com/topjohnwu/Magisk/releases" target="_blank">magisk</a> root)</li>
         </h3>
+
+        <h1>Requirements before flashing</h1>
+        <ul>
+            <li>Unlocked bootloader of the device</li>
+            <li>PC with ADB and Fastboot installed (it must have USB 2.0 port)</li>
+            <li>Out of box cable or high quality data transferring cable</li>
+            <li><strong>vbmeta.img</strong> from your current firmware <br>
+        </ul>
+
+
+        <h1>The link to download all the latest GSI or CUSTOM ROM: </h1>
+	<ul>
+        <li><a href="https://t.me/infinixnote30updates" target="_blank">Latest ROMS/Recovery</a></li>
+        <li><a href="https://t.me/dobrodroidranch" target="_blank">Dobro gsi</a></li>
+		<li><a href="https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list" target="_blank">Github GSI</a></li>
+        <li><a href="https://t.me/mysticgsi" target="_blank">Mystic GSi</a></li>
+	</ul>
+    
+    <h1>Rooting of the Device</h1>
+    <ul>
+        <li><h2>Copy the boot.img</h2>1. Copy the Boot.img from your stock firmware the firmware version should be the same as your build number otherwise you will end up on bootloop</li>
+        <li><h2>Install Magisk app</h2>Download and install Magisk on your phone from <a href="https://magiskmanager.com/" target="_blank">magisk</a> or <a href="https://github.com/Robotition/MagiskDelta" target="_blank">magisk delta</a> </li>
+        <li><h2>Patch the boot.img</h2>Go to Magisk and click install choose "Select and Patch a File" in method and select the boot.img the file should be renamed magisk_patched_[Random Strings].img at the download folder of your device.</li>
+        <li><h2>Move the patched boot image to pc</h2>Copy the  magisk_patched_[Random Strings].img to the platform-tools folder in your computer and rename it to "boot.img" you can copy the vbmeta.img from your firmware if you want to disable vbmeta</li>
+        <li><h2></h2></li>
+        <li></li>
+    </ul>
+
+
+
 
     </main>
     <footer>
